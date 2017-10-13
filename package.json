@@ -1,0 +1,14 @@
+{
+  "name": "todo-react-redux-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "livereload ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "livereload": "^0.6.2"
+  }
+}

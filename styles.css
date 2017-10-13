@@ -1,0 +1,93 @@
+html, body {
+	margin: 0;
+  padding: 0;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: white;
+  background: #fa4f4f;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-input-placeholder { color: #ccc; }
+
+.todo-app {
+  width: 500px;
+  margin: 50px auto 0 auto;
+  /* border: 1px dashed; */
+}
+.todo-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.todo-shadow:hover, .todo-shadow:focus {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.24);
+}
+
+.todo-header {
+  text-align: center;
+  line-height: 1.4em;
+}
+.todo-header h1 {
+  font-size: 50px;
+  font-weight: 200;
+}
+.todo-input {
+  width: calc(100% - 30px);
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  font-size: 25px;
+  font-weight: 100;
+  color: #474747;
+  padding: 0 10px 0 20px;
+  border-radius: 3px;
+}
+
+.main {
+  width: 100%;
+  /* background: white; */
+  border-radius: 3px;
+  color: #474747;
+}
+.todo-list {
+  padding: 0;
+  list-style-type: none;
+  font-size: 25px;
+  font-weight: 100;
+}
+.todo-list li {
+  margin-bottom: 7px;
+  padding: 10px 10px 10px 10px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.todo-list li .toggle {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  -webkit-appearance: none;
+	appearance: none;
+}
+.todo-list li .toggle:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 342.357 342.357" style="enable-background:new 0 0 342.357 342.357;" xml:space="preserve" width="15px" height="15px"><polygon points="290.04,33.286 118.861,204.427 52.32,137.907 0,190.226 118.862,309.071 342.357,85.606 " fill="#cccccc"/></svg>');
+}
+
+.priority {
+  margin: -10px -10px 0 0;
+  width: 5px;
+  height: 49px; /* TODO: сделать переменную высоту, в зависимости он высоты родителя */
+  float: right;
+  /* border: 1px dashed black; */
+  border-radius: 0 3px 3px 0;
+}
+.high {
+  background: rgb(180, 0, 180);
+}
+.regular {
+  background: #ccc;
+}
+.low {
+  background: rgb(194, 194, 0);
+}
