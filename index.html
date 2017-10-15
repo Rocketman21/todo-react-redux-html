@@ -10,48 +10,60 @@
 <body>
   <div class="todo-app">
     <header class="todo-header">
-      <hr>
       <h1>TODO-REACT-REDUX</h1>
-      <hr>
-      <input type="text" class="todo-input todo-shadow" placeholder="What needs to be done?"/>
     </header>
-    
+
+    <!-- <div class="input-wrapper"> -->
+      <!-- <div class="priority regular"></div> -->
+      <input type="text" class="todo-input todo-shadow" placeholder="What needs to be done?"/>
+    <!-- </div> -->
+
     <div class="main">
       <ul class="todo-list">
         <li>
+          <div class="priority ultra"></div>
+          
           <input type="checkbox" class="toggle" />
+          
+          <div class="todo-text">Lorem ipsum dolor sit</div>
 
-          Lorem ipsum dolor sit 
-
-          <div class="priority high"></div>
+          <div class="todo-remove"></div>
         </li>
         <li>
-          <input type="checkbox" class="toggle" />
-          
-          amet consectetur adipisicing elit. 
-          
           <div class="priority regular"></div>
-        </li>
-        <li>
+          
           <input type="checkbox" class="toggle" />
           
-          Nisi laborum sint culpa 
+          <div class="todo-text">amet consectetur adipisicing elit.</div>
+
+          <div class="todo-remove"></div>
+        </li>
+        <li>
+          <div class="priority regular"></div>
           
-           <div class="priority regular"></div>
+          <input type="checkbox" class="toggle" />
+          
+          <div class="todo-text">Nisi laborum sint culpa</div>
+
+          <div class="todo-remove"></div>
           </li>
         <li>
+          <div class="priority important"></div>
+          
           <input type="checkbox" class="toggle" />
           
-          aperiam maxime doloribus nam praesentium?
-          
-          <div class="priority low"></div>
+          <div class="todo-text">aperiam maxime doloribus nam praesentium? ASdsdasdasdas</div>
+
+          <div class="todo-remove"></div>
         </li>
         <li>
+          <div class="priority important"></div>
+          
           <input type="checkbox" class="toggle" />
           
-          Soluta necessitatibus delectus 
-          
-          <div class="priority low"></div>
+          <div class="todo-text">Soluta necessitatibus delectus</div>
+
+          <div class="todo-remove"></div>
         </li>
       </ul>
     </div>
