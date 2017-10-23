@@ -13,32 +13,32 @@
       <h1>TODO-REACT-REDUX</h1>
     </header>
 
-    <!-- <div class="input-wrapper"> -->
-      <!-- <div class="priority regular"></div> -->
-      <input type="text" class="todo-input todo-shadow" placeholder="What needs to be done?"/>
-    <!-- </div> -->
+    <div class="input-wrapper todo-shadow">
+      <input type="text" class="todo-input" placeholder="What needs to be done?"/>
+      <div class="selector-important"></div>
+    </div>
 
     <div class="main">
       <div class="todo-sidebar">
         <h6>status</h6>
         <p>5 items left</p>
         <ul class="todo-menu">
-          <li>all</li>
-          <li>active</li>
-          <li>completed</li>
+          <li><a>all</a></li>
+          <li><a>active</a></li>
+          <li><a>completed</a></li>
         </ul>
 
         <h6>priorities</h6>
         <ul class="todo-menu">
-            <li><div class="priority regular"></div>regular</li>
-            <li><div class="priority important"></div>important</li>
-            <li><div class="priority ultra"></div>ultra</li>
+            <li><a><div class="priority regular"></div>regular</a></li>
+            <li><a><div class="priority important"></div>important</a></li>
+            <li><a><div class="priority ultra"></div>ultra</a></li>
         </ul>
 
         <h6>items</h6>
         <ul class="todo-menu">
-            <li>check all</li>
-            <li>clear completed</li>
+            <li><a>toggle all</a></li>
+            <li><a>clear completed</a></li>
         </ul>
       </div>
 
@@ -46,47 +46,53 @@
         <li>
           <div class="priority ultra"></div>
           
+          <div class="todo-remove"></div>
+          
           <input type="checkbox" class="toggle" />
           
           <div class="todo-text">Lorem ipsum dolor sit</div>
 
-          <div class="todo-remove"></div>
+          <input type="text" class="todo-edit" />
         </li>
         <li>
           <div class="priority regular"></div>
+          
+          <div class="todo-remove"></div>
           
           <input type="checkbox" class="toggle" />
           
           <div class="todo-text">amet consectetur adipisicing elit.</div>
 
-          <div class="todo-remove"></div>
         </li>
         <li>
           <div class="priority regular"></div>
+          
+          <div class="todo-remove"></div>
           
           <input type="checkbox" class="toggle" />
           
           <div class="todo-text">Nisi laborum sint culpa</div>
 
-          <div class="todo-remove"></div>
           </li>
         <li>
           <div class="priority important"></div>
+          
+          <div class="todo-remove"></div>
           
           <input type="checkbox" class="toggle" />
           
           <div class="todo-text">aperiam maxime doloribus nam praesentium? ASdsdasdasdas</div>
 
-          <div class="todo-remove"></div>
         </li>
         <li>
           <div class="priority important"></div>
           
+          <div class="todo-remove"></div>
+          
           <input type="checkbox" class="toggle" />
           
-          <div class="todo-text">Soluta necessitatibus delectus</div>
+          <div class="todo-text">132132132154564654564654asdasdasdasdasdasdasdasd</div>
 
-          <div class="todo-remove"></div>
         </li>
       </ul>
     </div>
